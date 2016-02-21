@@ -5,14 +5,6 @@ languages: javascript
 ---
 #JavaScript Data Types and String Methods
 
-After the lesson, you'll be able to understand:
-+ JS data types
-+ Strings and string methods
-  + length
-  + upper and lower case
-  + concatenation
-  + charAt
-+ String indexing
 
 ## Data Types
 
@@ -23,7 +15,7 @@ Javascript is dynamically typed - or loosely typed - which means one variable ca
 JavaScript has a relatively small number of data types compared to other languages like Python. You've already explore two of these datatypes already - numbers and strings.
 
 1. **Number**: 1, 3.14, 0.13, -100, …  
-2. **String** (as in, a string of characters). examples include: "a", 'World Wide Web' - note you can use either single or double quotation marks
+2. **String** (as in, a string of characters). examples include: "hi!", '-Cubs-', "1999" - note you can use either single or double quotation marks
 3. **Boolean**: Represents either true or false
 4. **Undefined**: has not been assigned a value, so the value is unknown
 5. **Null**: This is a special keyword that means one of two things: no value or empty. The difference from undefined is that when a variable is null, it is still defined
@@ -56,6 +48,12 @@ Open up the JavaScript console to test what a certain method does. The following
 > myText.concat(" duh")
 < "Code Ninja duh"
 ```
+
+### String Methods with Indexing
+A string represents a group of characters in a certain order. To find out which character is in a certain position, we can use indexing. Indexing is similar to counting, expect in Javascript, the index starts at 0. So in the string "Google", the capital G has an index of 0. The final e has an index of 5.
+
+![example of string index](index.jpg)
+
 **indexOf(substr, [start])** - Searches and (if found) returns the index number of the first match to the characters. If not found, -1 is returned.
 ```
 > myText.indexOf("z")

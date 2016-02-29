@@ -6,10 +6,13 @@ languages: javascript
 #JavaScript Data Types and String Methods
 
 
-## Data Types
+# Overview
+When you initialize (or create) a variable, you have reserved some space in memory. Based on the kind -or type - of data, the interpreter will allocate a set amount of memory for your variable. In this lesson, it is important to know
+* JavaScript Datatypes
+* String Methods & Properties
+* String Properties
 
-When you initialize (or create) a variable, you have reserved some space in memory. Based on the kind -or type - of data, the interpreter will allocate a set amount of memory for your variable.
-
+## JavaScript Data Types
 Javascript is dynamically typed - or loosely typed - which means one variable can be reassigned to a different datatype.
 
 JavaScript has a relatively small number of data types compared to other languages like Python. You've explored two of these data types already - numbers and strings.
@@ -100,14 +103,15 @@ You can combine these tricks. You can even store the resultant value in the same
 > emotion1 = emotion2.substr(0,1) + emotion1
 ```
 
-### String Properties
-You can also use dot notation to call a property on a string to find out some valuable information about it. The most common string property is the length property.
+## String Properties
+You can also use dot notation to call a property on a variable to find out some valuable information about it. Unlike methods which act upon an object, properties just give us information about the object. Strings only have three properties, the most useful being the length property.
 ```
 var emotion3 = "satiated"
 > emotion3.length
 > 8
 ```
 Since length is a property rather than a method, its notation does not include parenthesis () at the end.
+
 
 
 

@@ -7,17 +7,20 @@ languages: javascript
 
 
 # Overview
-When you initialize (or create) a variable, you have reserved some space in memory. Based on the kind -or type - of data, the interpreter will allocate a set amount of memory for your variable. In this lesson, it is important to know
+
+When you initialize (or create) a variable, you have reserved some space in memory. Based on the kind -or type - of data, the interpreter will allocate a set amount of memory for your variable. In this lesson, it is important to know:
+
 * JavaScript Datatypes
 * String Methods & Properties
 * String Properties
 
 ## JavaScript Data Types
+
 Javascript is dynamically typed - or loosely typed - which means one variable can be reassigned to a different datatype.
 
 JavaScript has a relatively small number of data types compared to other languages like Python. You've explored two of these data types already - numbers and strings.
 
-1. **Number**: 1, 3.14, 0.13, -100, …  
+1. **Number**: 1, 3.14, 0.13, -100, …
 2. **String** (as in, a string of characters). examples include: "hi!", '-Cubs-', "1999" - note you can use either single or double quotation marks
 3. **Boolean**: Represents either true or false
 4. **Undefined**: has not been assigned a value, so the value is unknown
@@ -38,9 +41,11 @@ Notice that all methods have a set of parentheses, where you can include argumen
 
 ### Some String Methods
 
-Open up the JavaScript console to test what a certain method does. The following examples uses a variable, myText:
+Open up the JavaScript console to test and play with the methods we discuss below. The following examples uses a variable, myText:
 
 > ` myText= "Code Ninja"`
+
+Feel free to create your own!
 
 **.charAt(x)** - Returns the character at the “x” position within the string. Like many languages, Javascript starts counting at 0.
 ```
@@ -52,11 +57,14 @@ Open up the JavaScript console to test what a certain method does. The following
 ```
 **.concat(string1, string2)** - Combines one or more strings (arguments) into the existing one.
 ```
-> myText.concat(" duh")
-< "Code Ninja duh"
+> myText.concat(" at CSSI")
+< "Code Ninja at CSSI"
 ```
 
+Notice the space at the start of " at CSSI" - without it, our return value would be "Code Ninjaat CSSI"
+
 ### String Methods with Indexing
+
 A string represents a group of characters in a certain order. To find out which character is in a certain position, we can use indexing. Indexing is similar to counting, expect in Javascript, the index starts at 0. So in the string "Google", the capital G has an index of 0. The final e has an index of 5.
 
 ![example of string index](index.jpg)
@@ -75,7 +83,6 @@ A string represents a group of characters in a certain order. To find out which 
 < "ode Ni"
 ```
 
-
 ###Different Method Syntaxes
 Sometimes, there are multiple syntaxes that do the same thing.
 ```
@@ -91,29 +98,38 @@ When we add strings to each other, we stick one right on the end of the other. T
 You can make a new variable from the result of a function call.
 ```
 > var extraAnger = "loathe".toUpperCase()
+> extraAnger
+< "LOATHE"
 ```
-You can chain functions - call a function on the result of another function:
+
+**Method chaining** is a powerful way to use methods - you can add them together to take multiple actions at once. What is happening is that you are calling a method on the result of another method:
+
 ```
 >extraAnger.substr(0,2).toLowerCase().concat("ve")
+<"love"
 ```
+In the example above, we changed "LOATHE" (stored in `extraAnger`) to "love", by taking the substring of the first two characters ("LO"), lowercasing them ("lo"), and then concatenating "ve" to the end of the string ("love")!
+
 You can combine these tricks. You can even store the resultant value in the same variable you started with!
 ```
 > var emotion1 = "angry"
 > var emotion2 = "hungry"
-> emotion1 = emotion2.substr(0,1) + emotion1
+> emotion1 = emotion2.substr(0,1) + emotion1 + "!!!"
+< "hangry!!!"
 ```
 
 ## String Properties
-You can also use dot notation to call a property on a variable to find out some valuable information about it. Unlike methods which act upon an object, properties just give us information about the object. Strings only have three properties, the most useful being the length property.
+You can also use dot notation to call a *property* of a variable to find out some valuable information about it. Unlike methods which *act* upon an object, properties just *give us information* about the object. Strings only have three properties, the most useful being the length property.
 ```
 var emotion3 = "satiated"
 > emotion3.length
-> 8
+< 8
+
+var anotherEmotion = "bored"
+> anotherEmotion.length
+< 5
 ```
 Since length is a property rather than a method, its notation does not include parenthesis () at the end.
-
-
-
 
 ##Resources
 [W3 Schools String Methods](http://www.w3schools.com/js/js_string_methods.asp)

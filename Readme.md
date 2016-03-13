@@ -110,11 +110,20 @@ You can make a new variable from the result of a function call.
 ```
 In the example above, we changed "LOATHE" (stored in `extraAnger`) to "love", by taking the substring of the first two characters ("LO"), lowercasing them ("lo"), and then concatenating "ve" to the end of the string ("love")!
 
+Here's another example:
+```
+> var myPet = "hamster"
+> mypet.toUpperCase().substr(0,3).concat(" SANDWICH")
+< "HAM SANDWICH"
+```
+See if you can talk through what we just did here...
+
 You can combine these tricks. You can even store the resultant value in the same variable you started with!
 ```
 > var emotion1 = "angry"
 > var emotion2 = "hungry"
 > emotion1 = emotion2.substr(0,1) + emotion1 + "!!!"
+> emotion1
 < "hangry!!!"
 ```
 

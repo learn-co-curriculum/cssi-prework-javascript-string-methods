@@ -1,18 +1,14 @@
----
-tags: cssi, javascript
-level: 1
-languages: javascript
----
+
 #JavaScript Data Types and String Methods
 
+## Objectives
++ Understand the core data types used in Javascript
++ Use String Methods
++ Access String Properties
 
-# Overview
+## Overview
 
-When you initialize (or create) a variable, you have reserved some space in memory. Based on the kind -or type - of data, the interpreter will allocate a set amount of memory for your variable. In this lesson, it is important to know:
-
-* JavaScript Datatypes
-* String Methods & Properties
-* String Properties
+When you initialize (or create) a variable, you have reserved some space in memory. Based on the kind -or type - of data, the interpreter will allocate a set amount of memory for your variable. Data types include strings, numbers, booleans, and "undefined". You'll learn more about these below.
 
 ## JavaScript Data Types
 
@@ -24,11 +20,11 @@ JavaScript has a relatively small number of data types compared to other languag
 2. **String** (as in, a string of characters). examples include: "hi!", '-Cubs-', "1999" - note you can use either single or double quotation marks
 3. **Boolean**: Represents either true or false
 4. **Undefined**: has not been assigned a value, so the value is unknown
-5. **Null**: This is a special keyword that means one of two things: no value or empty. The difference from undefined is that when a variable is null, it is still defined
+5. **Null**: This is a special keyword that means one of two things: no value or empty. The difference between null and undefined is that when a variable is null, it is still defined.
 
 ## String Methods and Properties
 
-With numbers, you can use math operations. With strings, there are string operations called methods.
+With numbers, you can use math operations (which we've seen before). With strings, there are string operations called methods.
 
 A method is a function - a set of actions - attached to a piece of data. When a method is called on a string, it modifies that string based on that set of actions.
 
